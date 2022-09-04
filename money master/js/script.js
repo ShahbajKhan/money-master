@@ -34,15 +34,13 @@ const calculateExpense = () => {
 };
 
 const calculateSavings = () => {
-  // get income value
-  const income = document.getElementById("income");
   // calculate saving amount
   const savePercentage = document.getElementById("save").value;
 //   Validate saving percentage value
   if (savePercentage < 0) {
     alert("Provide positive saving value");
   }
-  const savingAmount = (savePercentage / 100) + income.value;
+  const savingAmount = (savePercentage / 100) + income;
 
   // calculate remaining balance
   const balance = document.getElementById("balance").innerText;
